@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 		QByteArray zip;
 		for(int i=0; i<sz; i++){
 			if(fread(&b, sizeof(char), 1, in) < 1){			// load data
-				qDebug() << "Cannot read file(data)" << argv[1];
+				qDebug() << "Missing the data(lack of data)" << argv[1];
 				goto err_exit;
 			}
 			zip.append(b);
